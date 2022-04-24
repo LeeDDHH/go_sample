@@ -1,19 +1,11 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
+	input "go_sample/pkg"
 )
 
 func main() {
-	name := input("type your name")
+	name := input.Input("type your name")
 	fmt.Println("Hello, " + name + "!!")
-}
-
-func input(msg string) string {
-	scanner := bufio.NewScanner(os.Stdin)
-	fmt.Print(msg + ": ")
-	scanner.Scan()
-	return scanner.Text()
 }
