@@ -36,26 +36,42 @@ func main() {
 	// 	fmt.Println("数値ではない")
 	// }
 
-	x := input.Input("type a number")
-	fmt.Print(x + "月は、")
-	switch n, err := strconv.Atoi(x); n {
-		case 0:
-				fmt.Println("整数値が得られません")
-				fmt.Println(err)
+	// x := input.Input("type a number")
+	// fmt.Print(x + "月は、")
+	// switch n, err := strconv.Atoi(x); n {
+	// 	case 0:
+	// 			fmt.Println("整数値が得られません")
+	// 			fmt.Println(err)
 
-		case 1,2,12:
-			fmt.Println("冬")
+	// 	case 1,2,12:
+	// 		fmt.Println("冬")
 
-		case 3,4,5:
-			fmt.Println("春")
+	// 	case 3,4,5:
+	// 		fmt.Println("春")
 
-		case 6,7,8:
-			fmt.Println("夏")
+	// 	case 6,7,8:
+	// 		fmt.Println("夏")
 
-		case 9,10,11:
-			fmt.Println("冬")
+	// 	case 9,10,11:
+	// 		fmt.Println("冬")
 		
-		default: 
-			fmt.Println("月の値ではありません")
+	// 	default: 
+	// 		fmt.Println("月の値ではありません")
+	// }
+
+	x := input.Input("type a number")
+	n, err := strconv.Atoi(x)
+
+	if err == nil {
+		fmt.Println(x + "は、")
+	} else {
+		return
+	}
+	switch {
+		case n%2 == 0:
+			fmt.Println("偶数")
+
+		case n%2 == 1:
+			fmt.Println("奇数")
 	}
 }
