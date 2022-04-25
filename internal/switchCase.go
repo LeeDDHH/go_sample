@@ -1,8 +1,8 @@
-package pkg
+package internal
 
 import (
 	"fmt"
-	input "go_sample/pkg/input"
+	input "go_sample/internal/input"
 	"strconv"
 )
 

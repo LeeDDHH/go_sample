@@ -1,7 +1,7 @@
 package main
 
 import (
-	array "go_sample/pkg"
+	array "go_sample/internal"
 )
 
 func main() {
