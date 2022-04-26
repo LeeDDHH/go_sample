@@ -1,9 +1,9 @@
 package main
 
 import (
-	slice "go_sample/internal"
+	map_example "go_sample/internal"
 )
 
 func main() {
-	slice.SliceControl()
+	map_example.Map()
 }
