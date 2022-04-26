@@ -2,12 +2,11 @@ package internal
 
 import (
 	"fmt"
-	input "go_sample/internal/input"
 	"strconv"
 )
 
 func SwitchCase() {
-	x := input.Input("type a number")
+	x := Input("type a number")
 	fmt.Print(x + "月は、")
 	switch n, err := strconv.Atoi(x); n {
 		case 0:

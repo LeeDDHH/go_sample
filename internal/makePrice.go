@@ -2,12 +2,11 @@ package internal
 
 import (
 	"fmt"
-	input "go_sample/internal/input"
 	"strconv"
 )
 
 func MakePrice() {
-	x := input.Input("type a price")
+	x := Input("type a price")
 	n, err := strconv.Atoi(x)
 	if err != nil {
 		fmt.Print("Error: ")

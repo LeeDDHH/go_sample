@@ -2,12 +2,11 @@ package internal
 
 import (
 	"fmt"
-	input "go_sample/internal/input"
 	"strconv"
 )
 
 func SwitchCase2() {
-	x := input.Input("type 1~5")
+	x := Input("type 1~5")
 	n, err := strconv.Atoi(x)
 
 	if err == nil {

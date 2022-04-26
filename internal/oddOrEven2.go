@@ -2,12 +2,11 @@ package internal
 
 import (
 	"fmt"
-	input "go_sample/internal/input"
 	"strconv"
 )
 
 func OddOrEven2() {
-	x := input.Input("type a number")
+	x := Input("type a number")
 	n, err := strconv.Atoi(x)
 
 	if err == nil {

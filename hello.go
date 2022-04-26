@@ -1,9 +1,9 @@
 package main
 
 import (
-	array "go_sample/internal"
+	slice "go_sample/internal"
 )
 
 func main() {
-	array.Array1()
+	slice.Array1()
 }
