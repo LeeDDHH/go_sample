@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	slice.Array1()
+	slice.SliceControl()
 }
