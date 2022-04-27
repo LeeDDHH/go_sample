@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	map_example.Map()
+	map_example.MultipleReturnValue()
 }
