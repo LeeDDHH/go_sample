@@ -1,9 +1,9 @@
 package main
 
 import (
-	map_example "go_sample/internal"
+	function "go_sample/internal"
 )
 
 func main() {
-	map_example.MultipleReturnValue()
+	function.Closure()
 }
