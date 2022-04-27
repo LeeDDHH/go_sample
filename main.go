@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	function.Closure()
+	function.PrintfSample()
 }
