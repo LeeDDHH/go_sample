@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	function.PrintfSample()
+	function.PointerSample()
 }
