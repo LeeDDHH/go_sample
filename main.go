@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	function.PointerSample()
+	function.PinterSubstitution()
 }
