@@ -44,3 +44,20 @@ func PointersPointer() {
 	fmt.Printf("q value:%d, address:%p\n", **q, *q)
 	fmt.Printf("q2 value:%d, address:%p\n", **q2, *q2)
 }
+
+func PointerUseMerit() {
+	n := 123
+	fmt.Printf("value:%d.\n", n)
+	pointerUseMeritChange1(n)
+	fmt.Printf("value:%d.\n", n)
+	pointerUseMeritChange2(&n)
+	fmt.Printf("value:%d.\n", n)
+}
+
+func pointerUseMeritChange1 (n int) {
+	n *= 2
+}
+
+func pointerUseMeritChange2 (n *int) {
+	*n *= 2
+}
