@@ -54,10 +54,23 @@ func PointerUseMerit() {
 	fmt.Printf("value:%d.\n", n)
 }
 
-func pointerUseMeritChange1 (n int) {
+func pointerUseMeritChange1(n int) {
 	n *= 2
 }
 
-func pointerUseMeritChange2 (n *int) {
+func pointerUseMeritChange2(n *int) {
 	*n *= 2
+}
+
+func PointerSlice() {
+	ar := []int{10, 20, 30}
+	fmt.Println(ar)
+	pointerSliceInitial(&ar)
+	fmt.Println(ar)
+}
+
+func pointerSliceInitial(ar *[]int) {
+	for i :=0 ; i < len(*ar); i++ {
+		(*ar)[i] = 0
+	}
 }

@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	function.PointerUseMerit()
+	function.PointerSlice()
 }
