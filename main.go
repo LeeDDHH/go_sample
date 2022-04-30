@@ -1,9 +1,9 @@
 package main
 
 import (
-	function "go_sample/internal"
+	structs "go_sample/internal"
 )
 
 func main() {
-	function.PointerSlice()
+	structs.ExtensionType()
 }
