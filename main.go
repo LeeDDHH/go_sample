@@ -1,9 +1,9 @@
 package main
 
 import (
-	structs "go_sample/internal"
+	channels "go_sample/internal"
 )
 
 func main() {
-	structs.ExtensionType()
+	channels.ExclusiveProcessing()
 }
